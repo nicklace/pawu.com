@@ -1,12 +1,9 @@
 main{
     
     h1 {
-        font-size: rem(50px);
-        line-height: rem(70px);
-        @media screen and (max-width: 767px) {
-            font-size: rem(35px);
-            line-height: rem(45px);
-        }
+        font-size: rem(68px);
+        line-height: rem(78px);
+        font-weight: 600;
     }
     
     h2 {
@@ -36,9 +33,12 @@ main{
     }
     
     h5,h6{
-        font-size: rem(18px);
-        font-weight: 400;
-        line-height: rem(28px);
+        color: $blue;
+        font-size: rem(20px);
+        font-weight: 600;
+        line-height: rem(25px);
+        margin-bottom: 15px;
+        margin-top: 20px;
     }
     
     .special{
@@ -64,4 +64,19 @@ main{
             z-index: -1;
         }
     }
+
+
+    #hero{
+        .text{
+            padding-right: 50px;
+        }
+        .visu{
+            //left: 15px;
+        }
+    }
+
+    #about{
+        margin: 72px 0 0 ;
+    }
+
 }

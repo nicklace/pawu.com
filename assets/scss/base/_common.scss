@@ -30,3 +30,55 @@ html {
 *:focus {
   box-shadow: none !important;
 }
+
+
+.btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border: 1px $black solid;
+  border-radius: 50px;
+  padding: 20px 30px;
+  font-size: 14px;
+  line-height: 14px;
+  color: white;
+  font-weight: 600;
+  height: auto;
+
+  svg{
+    margin-right: 15px;
+  }
+ 
+  &::before{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 5px;
+    left: 0;
+    background: $blue;
+    z-index: -1;
+    border-radius: 50px;
+    transition: all .3s;
+
+  }
+  &:hover{
+    background: $black;
+    color: white;
+    &::before{
+      transform: translateY(-5px);
+    }
+  }
+
+  &--alone{
+    display: inline-block;
+    width: auto;
+    padding: 19px;
+    svg{
+      margin-right: 0;
+    }
+  }
+
+}

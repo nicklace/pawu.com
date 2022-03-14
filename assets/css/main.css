@@ -186,22 +186,95 @@ html body *:focus {
           box-shadow: none !important;
 }
 
+.btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  border: 1px #000000 solid;
+  border-radius: 50px;
+  padding: 20px 30px;
+  font-size: 14px;
+  line-height: 14px;
+  color: white;
+  font-weight: 600;
+  height: auto;
+}
+
+.btn svg {
+  margin-right: 15px;
+}
+
+.btn::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 5px;
+  left: 0;
+  background: #27AAE1;
+  z-index: -1;
+  border-radius: 50px;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.btn:hover {
+  background: #000000;
+  color: white;
+}
+
+.btn:hover::before {
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+}
+
+.btn--alone {
+  display: inline-block;
+  width: auto;
+  padding: 19px;
+}
+
+.btn--alone svg {
+  margin-right: 0;
+}
+
 /* -----------------------------------------------------
    Layout
    ----------------------------------------------------- */
+header {
+  margin: 40px 0 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header * {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 auto;
+          flex: 0 1 auto;
+}
+
 /* -----------------------------------------------------
    Pages
    ----------------------------------------------------- */
 main h1 {
-  font-size: 3.125rem;
-  line-height: 4.375rem;
-}
-
-@media screen and (max-width: 767px) {
-  main h1 {
-    font-size: 2.1875rem;
-    line-height: 2.8125rem;
-  }
+  font-size: 4.25rem;
+  line-height: 4.875rem;
+  font-weight: 600;
 }
 
 main h2 {
@@ -236,9 +309,12 @@ main h4 {
 }
 
 main h5, main h6 {
-  font-size: 1.125rem;
-  font-weight: 400;
-  line-height: 1.75rem;
+  color: #27AAE1;
+  font-size: 1.25rem;
+  font-weight: 600;
+  line-height: 1.5625rem;
+  margin-bottom: 15px;
+  margin-top: 20px;
 }
 
 main .special {
@@ -265,5 +341,13 @@ main .special::before {
   -webkit-text-stroke: 0px;
   color: #4ABFB0;
   z-index: -1;
+}
+
+main #hero .text {
+  padding-right: 50px;
+}
+
+main #about {
+  margin: 72px 0 0;
 }
 /*# sourceMappingURL=main.css.map */
