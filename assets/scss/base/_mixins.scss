@@ -1,0 +1,54 @@
+@function getLetterSpacing($num) {
+  @return ($num / 1000) + em;
+}
+
+@function rem($size) {
+  @return $size / 16px * 1rem;
+}
+
+@mixin keyframes($name) {
+  @-webkit-keyframes #{$name} {
+    @content; 
+  }
+  @-moz-keyframes #{$name} {
+    @content;
+  }
+  @-ms-keyframes #{$name} {
+    @content;
+  }
+  @keyframes #{$name} {
+    @content;
+  } 
+}
+
+@mixin animation($animation) {
+  -webkit-animation: #{$animation};
+	-moz-animation: #{$animation};
+	-ms-animation: #{$animation};
+	animation: #{$animation};
+}
+
+@mixin transform($transform) {
+  -webkit-transform: $transform;
+  -moz-transform: $transform;
+  -ms-transform: $transform;
+  transform: $transform;
+}
+
+@mixin transition($args...) {
+  -webkit-transition: $args;
+  -moz-transition: $args;
+  -ms-transition: $args;
+  -o-transition: $args;
+  transition: $args;
+}
+
+@mixin opacity($opacity) {
+  opacity: $opacity;
+  $opacity-ie: $opacity * 100;
+  filter: alpha(opacity=$opacity-ie); //IE8
+}
+
+@function rem($size) {
+  @return $size / 16px * 1rem;
+}

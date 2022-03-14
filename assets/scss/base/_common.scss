@@ -1,0 +1,32 @@
+html {
+  font-size: $default-font-size;
+  body {
+    @media screen and (max-width: 990px) {
+      .container{
+        max-width: 100vw;
+        padding-left: 0;
+        padding-right: 0;
+      }
+    }
+
+    background: whte;
+    font-family: $font-body;
+    font-size: 1rem;
+    color: $black;
+    line-height: 28px;
+    z-index: 0;
+    overflow-x: hidden;
+    max-width: 100vw;
+
+    *:focus {
+      outline: none;
+    }
+
+
+  }
+}
+
+
+*:focus {
+  box-shadow: none !important;
+}

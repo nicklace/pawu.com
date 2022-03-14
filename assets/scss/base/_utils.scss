@@ -1,0 +1,40 @@
+
+/* ELEMENTS */
+.hidden{
+    display: none;
+}
+
+@media screen and (max-width: 990px) {
+    .hide-mob{
+        display: flex !important;
+        &--inline{
+            display: inline !important;
+        }
+    }
+    .hide-desk{
+        display: none !important;
+    }
+}
+
+@media screen and (min-width: 991px) {
+    .hide-mob{
+        display: none !important;
+    }
+    .hide-desk{
+        display: flex !important;
+        &--inline{
+            display: inline !important;
+        }
+    }
+}
+
+.pseudo{
+    content: '';
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.shadow{
+    box-shadow: 0 5px 15px 0px rgba(34,60,107,.20)!important;
+}
