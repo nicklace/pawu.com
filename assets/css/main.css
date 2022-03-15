@@ -97,6 +97,14 @@
   font-display: swap;
 }
 
+@font-face {
+  font-family: 'Montserrat';
+  src: url("../font/Montserrat-Bold.woff2") format("woff2"), url("../font/Montserrat-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
 /* Colors
   ========================================================================== */
 /* Typography
@@ -159,7 +167,6 @@ html {
 }
 
 html body {
-  background: whte;
   font-family: "Bai Jamjuree", sans-serif;
   font-size: 1rem;
   color: #000000;
@@ -187,9 +194,9 @@ html body *:focus {
 }
 
 .btn {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -246,11 +253,21 @@ html body *:focus {
   margin-right: 0;
 }
 
-/* -----------------------------------------------------
-   Layout
-   ----------------------------------------------------- */
+.btn--big {
+  font-size: 24px;
+  line-height: 24px;
+  padding: 28px 40px;
+}
+
+.btn--big svg {
+  margin: 0 0 0 15px;
+}
+
 header {
-  margin: 40px 0 80px;
+  padding: 40px 0 80px;
+}
+
+header .fl {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -262,15 +279,16 @@ header {
           align-items: center;
 }
 
-header * {
+header .fl * {
   -webkit-box-flex: 0;
       -ms-flex: 0 1 auto;
           flex: 0 1 auto;
 }
 
-/* -----------------------------------------------------
-   Pages
-   ----------------------------------------------------- */
+header .bg {
+  top: 0;
+}
+
 main h1 {
   font-size: 4.25rem;
   line-height: 4.875rem;
@@ -278,8 +296,9 @@ main h1 {
 }
 
 main h2 {
-  font-size: 2.5rem;
-  line-height: 3.125rem;
+  font-size: 3.625rem;
+  line-height: 4.25rem;
+  font-weight: 600;
 }
 
 @media screen and (max-width: 767px) {
@@ -290,9 +309,10 @@ main h2 {
 }
 
 main h3 {
-  font-size: 1.875rem;
-  line-height: 2.5rem;
-  margin: 35px 0 20px;
+  font-size: 3rem;
+  line-height: 3.625rem;
+  font-weight: 400;
+  margin: 60px 0 30px;
 }
 
 @media screen and (max-width: 767px) {
@@ -303,18 +323,30 @@ main h3 {
 }
 
 main h4 {
-  font-size: 1.375rem;
+  font-size: 2.375rem;
   font-weight: 400;
-  line-height: 2rem;
+  line-height: 3rem;
+  margin: 40px 0 0;
 }
 
-main h5, main h6 {
+main h5 {
   color: #27AAE1;
   font-size: 1.25rem;
   font-weight: 600;
   line-height: 1.5625rem;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
   margin-top: 20px;
+}
+
+main p {
+  font-size: 1.125rem;
+  line-height: 1.875rem;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+
+main p strong {
+  font-weight: 600;
 }
 
 main .special {
@@ -326,11 +358,13 @@ main .special {
   color: transparent;
   -webkit-text-stroke: 1px black;
   position: relative;
+  margin-bottom: 100px;
 }
 
 main .special--big {
   font-size: 180px;
   line-height: 150px;
+  margin-bottom: 80px;
 }
 
 main .special::before {
@@ -343,11 +377,65 @@ main .special::before {
   z-index: -1;
 }
 
-main #hero .text {
+main section .text {
   padding-right: 50px;
 }
 
 main #about {
+  position: relative;
   margin: 72px 0 0;
+}
+
+main #about .bg {
+  top: 120px;
+}
+
+main #join {
+  text-align: center;
+  max-width: 730px;
+  margin: 0 auto;
+}
+
+.bg {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  z-index: -1;
+}
+
+footer {
+  padding: 40px 0 60px;
+  position: relative;
+}
+
+footer div.fl {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer div.fl span {
+  font-size: 12px;
+  line-height: 22px;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.4);
+}
+
+footer div.fl span a {
+  font-family: 'Montserrat';
+  color: #292F30;
+  font-weight: 700;
+}
+
+footer div.fl span a:hover {
+  color: #292F30;
+}
+
+footer .bg {
+  bottom: 0;
 }
 /*# sourceMappingURL=main.css.map */

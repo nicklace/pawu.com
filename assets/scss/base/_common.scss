@@ -1,6 +1,7 @@
 html {
   font-size: $default-font-size;
   body {
+
     @media screen and (max-width: 990px) {
       .container{
         max-width: 100vw;
@@ -9,7 +10,6 @@ html {
       }
     }
 
-    background: whte;
     font-family: $font-body;
     font-size: 1rem;
     color: $black;
@@ -33,7 +33,7 @@ html {
 
 
 .btn{
-  display: flex;
+  display: inline-flex;
   justify-content: center;
   align-items: center;
   position: relative;
@@ -78,6 +78,15 @@ html {
     padding: 19px;
     svg{
       margin-right: 0;
+    }
+  }
+  
+  &--big{
+    font-size: 24px;
+    line-height: 24px;
+    padding: 28px 40px;
+    svg{
+      margin: 0 0 0 15px;
     }
   }
 

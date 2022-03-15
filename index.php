@@ -11,7 +11,7 @@
         <!-- Main CSS -->
         <link rel="stylesheet" href="assets/css/main.css">
     
-        <title>pawu</title>
+        <title>Pawu.online</title>
       </head>
     <body>
         <svg width="0" height="0" class="hidden">
@@ -23,32 +23,42 @@
                 <path d="M19 9.53064C13.99 11.4383 11.035 15.2614 10 20.9999" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                 <path d="M1 9.53064C6.0175 11.4383 8.9725 15.2614 10 20.9999" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
             </symbol>
-
+            <symbol viewBox="0 0 35 21" fill="none" xmlns="http://www.w3.org/2000/svg" id="arrow-h">
+                <path d="M1.495 10.5471H33.495" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M22.359 1.54712C24.215 6.5614 27.927 9.51855 33.495 10.5471" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M22.359 19.5471C24.215 14.5328 27.927 11.5757 33.495 10.5471" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </symbol>
         </svg>
         <header class="container">
-            <img src="assets/svg/logo.svg" alt="">         
-            <a href="" class="btn"><svg class="icon" width="20" height="21"><use xlink:href="#dialog"></use></svg>Discussion group</a>
+            <div class="bg"><img src="assets/svg/bg_green.svg" alt="Pawu.online"></div>
+            <div class="fl">
+                <img src="assets/svg/logo.svg" alt="Pawu.online">         
+                <a href="https://groups.google.com/a/pawu.online/g/discussions" target="_blank" class="btn"><svg class="icon" width="20" height="21"><use xlink:href="#dialog"></use></svg>Discussion group</a>
+            </div>
+           
         </header>
         <main class="container">
             <section id="hero">
+                
                 <div class="row">
                     <div class="col-md-5 text">
                         <h5>Welcome to PAWU!</h5>
                         <h1>Patient advocates of the world, unite!</h1>
                     </div>
-                    <div class="col-md-7 visu">
-                        <img src="assets/svg/illu_header.svg" alt="">
+                    <div class="col-md-7 second">
+                        <img src="assets/svg/illu_header.svg" alt="Pawu.online">
                     </div>
                 </div>
                 <a href="#about" class="btn btn--alone scroll"><svg class="icon" width="20" height="22"><use xlink:href="#arrow"></use></svg></a>
             </section>
             <section id="about">
+                <div class="bg"><img src="assets/svg/bg_yellow.svg" alt="Pawu.online"></div>
                 <span class="special special--big" data-content="PAWU is">PAWU is</span>
                 <div class="row">
-                    <div class="col-4">
+                    <div class="col-md-5 text">
                         <h2>Patients Advocates Worldwide United</h2>
                     </div>
-                    <div class="col-8">
+                    <div class="col-md-7">
                         <p>We are a loose group of patients advocates. No legal structure. Minimal costs. 
                             Maximum efficiency. Everyone interested by the subject can join.</p>
                         <p>Our only goal is to facilitate the communication between patient advocates. That’s it.</p>
@@ -57,17 +67,23 @@
                             They are all our friends. <strong>We don’t compete. We collaborate.</strong></p>
                     </div>
                 </div>
-                <h4>This is our website. Our domain name is</h4>
+                <h4 class="text-center">This is our website. Our domain name is</h4>
                 <span class="special " data-content="pawu.online">pawu.online</span>
             </section>
             <section id="join">
-                <img src="assets/svg/illu_bottom.svg" alt="">
+                
+                <img src="assets/svg/illu_bottom.svg" alt="Pawu.online">
                 <h3>Start by joining the discussion via our discussion group</h3>
-                <a href="" class="btn">Join us</a>
+                <a href="https://groups.google.com/a/pawu.online/g/discussions" target="_blank" class="btn btn--big">Join us <svg class="icon" width="35" height="21"><use xlink:href="#arrow-h"></use></svg></a>
             </section>
         </main>
-        <footer>
-
+        <footer class="container">
+            <div class="fl">
+                <span>© PAWU. All rights reserved.</span>
+                <span>Made by <a href="https://www.netside.be/" target="_blank" title="Netside">NETSIDE</a></span>
+            </div>
+            
+            <div class="bg"><img src="assets/svg/bg_blue.svg" alt="Pawu.online"></div>
         </footer>
 
         <!-- Optional JavaScript -->
