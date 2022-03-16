@@ -263,7 +263,7 @@ html body *:focus {
 .btn--alone {
   display: inline-block;
   width: auto;
-  padding: 19px;
+  padding: 16px 17px;
 }
 
 .btn--alone svg {
