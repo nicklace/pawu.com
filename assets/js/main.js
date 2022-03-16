@@ -1,4 +1,16 @@
 jQuery(document).ready(function () {
+
+  wow = new WOW(
+    {
+      boxClass:     'wow',      // default
+      animateClass: 'animated', // default
+      offset:       0,          // default
+      mobile:       false,       // default
+      live:         true        // default
+    }
+  )
+  wow.init();
+
   /* Scroll */
   jQuery(".scroll").on('click', function(event) {
     if (this.hash !== "") {
