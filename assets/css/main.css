@@ -497,6 +497,13 @@ main .special--break:first-child {
   }
 }
 
+@media screen and (max-width: 420px) {
+  main .special:not(.special--big) {
+    margin-left: -30px;
+    margin-right: -30px;
+  }
+}
+
 main .special--big {
   font-size: 180px;
   line-height: 150px;
@@ -521,6 +528,12 @@ main .special--big:first-child {
     line-height: 90px;
     margin-bottom: 30px;
   }
+  main .special--big:first-child {
+    margin-right: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 430px) {
   main .special--big:first-child {
     margin-right: 0;
   }
